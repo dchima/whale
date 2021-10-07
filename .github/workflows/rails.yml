@@ -29,7 +29,7 @@ jobs:
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.6.x
+          ruby-version: 3.0.x
       # - name: Set up Node
       #   uses: actions/setup-node@v1
       #   with:
@@ -40,9 +40,9 @@ jobs:
           gem install bundler
           bundle install --jobs 4 --retry 3
 
-      - name: Setup test db
-        env:
-          db: postgres://postgres:postgres@localhost:5432/whale
+      # - name: Setup test db
+      #   env:
+      #     db: postgres://postgres:postgres@localhost:5432/whale
       #   run: |
       #     cp config/database.ci.yml config/database.yml
       #     rake db:create db:migrate
