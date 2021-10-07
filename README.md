@@ -1,24 +1,22 @@
-# README
+# Whale
+Simple weather tracking graphql api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Goal
+We'll be using the OpenWeather JSON REST api https://openweathermap.org/api to fetch daily weather information for users.
+- A user should be able to fetch daily weather details in his/her area
+- subscribe to daily weather forecasts
+- cancel daily subscriptiosns
 
-Things you may want to cover:
+## Learning points
 
-* Ruby version
+- rails + graphql
+- sending synchronous emails
+- sending asynchronous emails
+- scheduling asynchronous tasks
+- firing off routine tasks
+- interactors
+- talking with external services
+- testing
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## meta
+rails version => 3.02
