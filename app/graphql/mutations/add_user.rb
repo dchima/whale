@@ -3,9 +3,9 @@ module Mutations
     argument :name, String, required: true
     argument :email, String, required: true
 
-    field :user, Types::UserType, null: true
+    type Types::UserType
 
-    def resolve(name:, email:)
+    def resolve(name: nil, email: nil)
       params = {
         :name => name,
         :email => email,

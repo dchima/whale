@@ -46,3 +46,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # graphql gem
 gem 'graphql', '1.11.6'
+
+# httparty gem
+gem 'httparty'
+
+gem 'geocoder'
