@@ -12,5 +12,6 @@ module Types
 
     field :fetch_users, resolver: Queries::FetchUsers
     field :fetch_user, resolver: Queries::FetchUser
+    field :fetch_weather, resolver: Queries::FetchWeather
   end
 end
