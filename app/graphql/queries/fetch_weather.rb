@@ -1,3 +1,4 @@
+require 'date'
 require 'weather_api'
 module Queries
   class FetchWeather < Queries::BaseQuery
@@ -7,6 +8,8 @@ module Queries
     def resolve
       api = WeatherAPI.new()
       weather = api.getWeather(context[:ip])
+      sunrise = Time.at(weather['sys']['sunrise']).utc.to_datetime
+      sunset = Time.at(weather['sys']['sunset']).utc.to_datetime
       params = { 
         longitude: weather['coord']['lon'],
         latitude: weather['coord']['lat'],
@@ -17,8 +20,8 @@ module Queries
         humidity: weather['main']['humidity'],
         country_code: weather['sys']['country'],
         city: weather['name'],
-        sunrise: weather['sys']['sunrise'],
-        sunset: weather['sys']['sunset']
+        sunrise: sunrise,
+        sunset: sunset
       }
       params
     end

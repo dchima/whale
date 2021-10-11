@@ -50,4 +50,8 @@ gem 'graphql', '1.11.6'
 # httparty gem
 gem 'httparty'
 
+# geocoder gen
 gem 'geocoder'
+
+# clockword gem
+gem 'clockwork'

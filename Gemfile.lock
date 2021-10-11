@@ -64,6 +64,9 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
+    clockwork (2.0.4)
+      activesupport
+      tzinfo
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     erubi (1.10.0)
@@ -164,6 +167,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  clockwork
   figaro
   geocoder
   graphiql-rails
